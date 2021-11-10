@@ -1,0 +1,5 @@
+[
+    {"id":0,"ürün":"Computer","fiyat":1000,"imgsrc":"Computer.jpg","stok":10},
+    {"id":1,"ürün":"Tv","fiyat":1200,"imgsrc":"Tv.jpg","stok":12},
+    {"id":2,"ürün":"Phone","fiyat":1600,"imgsrc":"Phone.jpg","stok":8}
+]

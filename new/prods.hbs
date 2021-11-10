@@ -1,0 +1,13 @@
+<p> product: </p>
+<p> size of array: {{prods.length}}</p>
+<ul>
+    {{#each prods}}
+    <li><a href="/prodDetail?id={{this._id}}">{{this.pname}}</a></li>
+    {{/each}}
+</ul>
+<p> Shopping cart </p>
+<ul>
+        {{#each sc}}
+            <li>{{this}}</li>
+        {{/each}}
+</ul>

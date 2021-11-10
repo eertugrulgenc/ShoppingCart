@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+        div{ 
+            display: inline-block;
+            width: 100px;
+        }
+        main{
+            float: left;
+            width: 500px;
+        }
+    header{
+      
+        width: 100px;
+        height: 50px;
+     
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <main>
+<p>Product Details:</p>
+<p>Name: {{prod.ürün}} </p>
+<p>Price : {{prod.fiyat}} </p>
+<p>Stok : {{prod.stok}} </p>
+<p><img src="/images/{{prod.imgsrc}}" alt="prod Img"></p>
+<p><a href="/addToSC?id={{prod._id}}">Add To ShoppingCard</a></p>
+<p><a href="/products">Back To Products</a></p>
+</main>
+<div>
+ <a href="/shoping">   <i class="fas fa-cart-plus fa-3x"></i>   </a>
+ </div>
+    <header>
+       <a href="">    {{oturum}}<span> oturum açtı</span> </a>
+    </header>
+</body>
+</html>

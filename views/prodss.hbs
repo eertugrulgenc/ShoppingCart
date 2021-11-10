@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+     h1{
+        margin-left:50vh;
+        text-align: center;
+        width: 50%;
+        background-color: grey;
+        color: aliceblue;
+    }
+    li{
+            margin-left: 50vh;
+            margin-top: 10px;
+            width: 50%;
+    }
+    #out{
+            margin-left: 50vh;
+            margin-top: 10px;
+            width: 50%;
+    }
+    header{
+      
+        width: 100px;
+        height: 50px;
+        margin-left: 80%;
+    }
+    p{
+            margin:auto;
+            width: 40%;
+    }
+    i{
+        float: right;
+        margin-right: 27.5%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+       
+    <a href="">    {{oturum}}<span> oturum açtı</span> </a>
+     
+    </header>
+     <h1>Products</h1>
+    <a href="/shoping">  <i class="fas fa-cart-plus fa-3x"></i> </a>
+    <ul>
+    {{#each prods}}
+    <li><a href="/prodDetail?id={{this._id}}">{{this.ürün}}</a></li>
+    {{/each}}
+    </ul>
+   
+    <p> Shopping cart </p>
+    <ul>
+        {{#each sc}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <form action="SignOut" method="GET">
+    <input type="submit" value="Sign Out" id="out">
+    </form>
+    <br>
+    <p>Mesaj : {{mesaj}} </p>
+</body>
+</html>
+

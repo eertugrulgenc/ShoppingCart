@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline-block;
+        }
+        header{
+      
+        width: 100px;
+        height: 50px;
+        margin-left: 50px;
+       
+    }
+    </style>
+</head>
+<body>
+    <header>
+       
+    <a href="">    {{oturum}}<span> oturum açtı</span> </a>
+     
+    </header>
+     <ul>
+        {{#each shop}}
+            <li>{{this.ürün}} : </li>
+            <li>{{this.fiyat}}</li>
+            <br>
+        {{/each}}
+</ul>
+<p>Total : {{tot}} </p>
+<p><a href="/products">Back To Products</a></p>
+<a href="/tebrik"> <input type="submit" value="BUY"> </a>
+
+</body>
+</html>

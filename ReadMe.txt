@@ -1,0 +1,1 @@
+This is a shopping cart application. The user must first become a member. After the user information is saved in the database, he can log in, view the information of the products he chooses from the homepage and add them to his cart. Then he buys these products and the product stock is updated from the database.
